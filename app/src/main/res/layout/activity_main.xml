@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Information"
+        android:textSize="24dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="RtlHardcoded,SpUsage" />
+
+    <EditText
+        android:id="@+id/StudentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student ID"
+        android:textSize="24dp"
+        android:layout_below="@+id/Information"
+        android:inputType="number"
+        tools:ignore="SpUsage" />
+
+    <EditText
+        android:id="@+id/Fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fullname"
+        android:textSize="24dp"
+        android:layout_below="@+id/StudentID"
+        android:inputType="textPersonName"
+        tools:ignore="SpUsage" />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="24dp"
+        android:layout_below="@+id/Fullname"
+        android:inputType="textPersonName"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insert"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/Address"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update"
+        android:layout_below="@id/btnInsert"
+        tools:ignore="SpUsage" />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete"
+        android:layout_below="@id/btnUpdate"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View"
+        android:layout_below="@id/btnDelete"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>
